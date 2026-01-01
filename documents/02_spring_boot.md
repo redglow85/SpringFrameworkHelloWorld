@@ -81,7 +81,7 @@ Boot로 아주 간단한 REST API를 띄워봅니다.
 ### 5.2 실행 방법
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl spring-boot-rest-example spring-boot:run
 ```
 

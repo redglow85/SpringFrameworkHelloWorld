@@ -88,14 +88,14 @@ message HelloReply {
 서버 실행(터미널 1):
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl grpc-example -Dexec.mainClass=com.helloworld.grpc.server.GreeterServer exec:java
 ```
 
 클라이언트 실행(터미널 2):
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl grpc-example -Dexec.mainClass=com.helloworld.grpc.client.GreeterClient -Dexec.args=Alice exec:java
 ```
 

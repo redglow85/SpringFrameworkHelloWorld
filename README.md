@@ -24,14 +24,14 @@
 ### 1) Spring Framework DI 예제 실행
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl spring-di-example exec:java
 ```
 
 ### 2) Spring Boot REST/RPC 예제 실행
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl spring-boot-rest-example spring-boot:run
 ```
 
@@ -48,14 +48,14 @@ curl -s -X POST http://localhost:8080/rpc/add -H 'Content-Type: application/json
 서버 실행(터미널 1):
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl grpc-example -Dexec.mainClass=com.helloworld.grpc.server.GreeterServer exec:java
 ```
 
 클라이언트 실행(터미널 2):
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl grpc-example -Dexec.mainClass=com.helloworld.grpc.client.GreeterClient -Dexec.args=Alice exec:java
 ```
 

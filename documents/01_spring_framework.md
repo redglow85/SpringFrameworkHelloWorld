@@ -117,7 +117,7 @@ AOP는 “핵심 로직”과 “공통 로직”을 분리하는 기술입니�
 ### 5.2 실행 방법
 
 ```bash
-cd /Users/matrix/repositories_local/spring/SpringFrameworkHelloWorld
+cd {project_root}
 mvn -q -pl spring-di-example exec:java
 ```
 
